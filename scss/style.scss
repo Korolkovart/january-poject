@@ -1,0 +1,8 @@
+@import '_settings';
+@import '_normalize';
+@import './blocks/_header';
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+}

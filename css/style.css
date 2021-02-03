@@ -443,11 +443,61 @@ template {
 }
 
 .feedback__form-name {
+  padding: 16px 0 11px 23px;
   margin-bottom: 19px;
+  min-width: 217px;
+  font-family: "SourceSansPro-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  background-color: #000;
+  outline: none;
+  -webkit-box-shadow: -3px 0 0 #0199e6;
+          box-shadow: -3px 0 0 #0199e6;
+  border: 1px solid rgba(1, 153, 230, 0.3);
 }
 
 .feedback__form-email {
   margin-bottom: 19px;
+  padding: 16px 0 11px 23px;
+  margin-bottom: 19px;
+  min-width: 217px;
+  font-family: "SourceSansPro-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  background-color: #000;
+  outline: none;
+  -webkit-box-shadow: -3px 0 0 #0199e6;
+          box-shadow: -3px 0 0 #0199e6;
+  border: 1px solid rgba(1, 153, 230, 0.3);
+}
+
+.feedback__form-phone {
+  padding: 16px 0 11px 23px;
+  margin-bottom: 19px;
+  min-width: 217px;
+  font-family: "SourceSansPro-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  background-color: #000;
+  outline: none;
+  -webkit-box-shadow: -3px 0 0 #0199e6;
+          box-shadow: -3px 0 0 #0199e6;
+  border: 1px solid rgba(1, 153, 230, 0.3);
 }
 
 .feedback__form-btn {

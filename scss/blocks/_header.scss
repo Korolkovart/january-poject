@@ -6,34 +6,70 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-//   min-height: 819px;
+  //   min-height: 819px;
 }
 .container {
-  padding: 23px 11px 22px 11px;
+  padding: 0 11px 22px 11px;
 }
 .main-section {
-//   min-height: 819px;
+  //   min-height: 819px;
   background: rgba(0, 0, 0, 0.8);
   &__header {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    padding-top: 23px;
   }
   &__info {
     margin-top: 20px;
   }
 }
 @media (min-width: 640px) {
+  .container {
+    padding: 0 62px 38px 62px;
+  }
   .main-section {
+    &__header {
+      padding-top: 39px;
+    }
     &__info {
       margin-top: 18px;
     }
   }
+}
+
+@media (min-width: 768px) {
   .container {
-    padding: 39px 62px 38px 62px;
+    padding: 0 0 55px 0;
+    max-width: 646px;
+    margin: auto;
+  }
+  .main-section {
+    &__header {
+      padding-top: 40px;
+    }
+    &__info {
+      margin-top: 18px;
+    }
   }
 }
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 0 156px 0;
+    max-width: 898px;
+    position: relative;
+  }
+  .main-section {
+    &__header {
+      padding-top: 50px;
+    }
+    &__info {
+      margin-top: 108px;
+    }
+  }
+}
+
 .info {
   &__title {
     display: block;
@@ -77,6 +113,30 @@
     &__text {
       padding: 0 10px;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .info {
+    &__title {
+      width: 400px;
+      font-size: 38px;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .info {
+    &__title {
+      width: 100%;
+      font-size: 45px;
+    }
+    &__text {
+      font-size: 20px;
+      margin-bottom: 69px;
     }
   }
 }
@@ -167,7 +227,7 @@
 }
 @media (min-width: 640px) {
   .feedback {
-      padding: 22px 0 20px 0;
+    padding: 15px 0 20px 0;
     &__form {
       &-name {
         margin-bottom: 22px;
@@ -181,12 +241,95 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .feedback {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__form {
+      width: 407px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      &-name {
+        display: block;
+        padding: 10px 0;
+        margin-bottom: 28px;
+        min-width: 146px;
+        text-align: center;
+        line-height: 24px;
+      }
+      &-email {
+        display: block;
+        padding: 10px 0;
+        margin-bottom: 28px;
+        min-width: 146px;
+        text-align: center;
+        line-height: 24px;
+      }
+      &-phone {
+        margin-bottom: 0;
+        display: block;
+        padding: 10px 0;
+        min-width: 146px;
+        text-align: center;
+        line-height: 24px;
+      }
+      &-btn {
+        align-self: start;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .feedback {
+      padding: 25px 0 22px 0;
+    &__form {
+        margin-bottom: 0;
+      width: 100%;
+      justify-content: space-around;
+      &-name {
+        min-width: 217px;
+        padding: 14px 0 10px 23px;
+        margin-bottom: 0;
+        text-align: left;
+        line-height: 28px;
+      }
+      &-email {
+        min-width: 217px;
+        padding: 14px 0 10px 23px;
+        margin-bottom: 0;
+        text-align: left;
+        line-height: 28px;
+      }
+      &-phone {
+        min-width: 217px;
+        padding: 14px 0 10px 23px;
+        margin-bottom: 0;
+        text-align: left;
+        line-height: 28px;
+      }
+    }
+    &__action{
+        position: absolute;
+        top: 500px;
+        right: 140px;
+      }
+  }
+}
 
 .btn {
-  width: 187px;
-  height: 57px;
+  display: block;
+  padding: 0;
+  min-width: 187px;
+  min-height: 57px;
   background-color: #008ed6;
   border: none;
+  border-radius: 2px;
   cursor: pointer;
   outline: none;
   color: #ffffff;
@@ -195,4 +338,16 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .btn {
+    min-width: 151px;
+    min-height: 45px;
+  }
+}
+@media (min-width: 1024px) {
+    .btn {
+        min-width: 187px;
+        min-height: 54px;
+    }
 }

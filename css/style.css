@@ -412,7 +412,7 @@ template {
 }
 
 .container {
-  padding: 23px 11px 22px 11px;
+  padding: 0 11px 22px 11px;
 }
 
 .main-section {
@@ -432,6 +432,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 23px;
 }
 
 .main-section__info {
@@ -439,11 +440,42 @@ template {
 }
 
 @media (min-width: 640px) {
+  .container {
+    padding: 0 62px 38px 62px;
+  }
+  .main-section__header {
+    padding-top: 39px;
+  }
   .main-section__info {
     margin-top: 18px;
   }
+}
+
+@media (min-width: 768px) {
   .container {
-    padding: 39px 62px 38px 62px;
+    padding: 0 0 55px 0;
+    max-width: 646px;
+    margin: auto;
+  }
+  .main-section__header {
+    padding-top: 40px;
+  }
+  .main-section__info {
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 0 156px 0;
+    max-width: 898px;
+    position: relative;
+  }
+  .main-section__header {
+    padding-top: 50px;
+  }
+  .main-section__info {
+    margin-top: 108px;
   }
 }
 
@@ -498,6 +530,27 @@ template {
   .info__text {
     padding: 0 10px;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .info__title {
+    width: 400px;
+    font-size: 38px;
+  }
+  .info__text {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info__title {
+    width: 100%;
+    font-size: 45px;
+  }
+  .info__text {
+    font-size: 20px;
+    margin-bottom: 69px;
   }
 }
 
@@ -619,7 +672,7 @@ template {
 
 @media (min-width: 640px) {
   .feedback {
-    padding: 22px 0 20px 0;
+    padding: 15px 0 20px 0;
   }
   .feedback__form-name {
     margin-bottom: 22px;
@@ -632,11 +685,113 @@ template {
   }
 }
 
+@media (min-width: 768px) {
+  .feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback__form {
+    width: 407px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .feedback__form-name {
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 28px;
+    min-width: 146px;
+    text-align: center;
+    line-height: 24px;
+  }
+  .feedback__form-email {
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 28px;
+    min-width: 146px;
+    text-align: center;
+    line-height: 24px;
+  }
+  .feedback__form-phone {
+    margin-bottom: 0;
+    display: block;
+    padding: 10px 0;
+    min-width: 146px;
+    text-align: center;
+    line-height: 24px;
+  }
+  .feedback__form-btn {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feedback {
+    padding: 25px 0 22px 0;
+  }
+  .feedback__form {
+    margin-bottom: 0;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .feedback__form-name {
+    min-width: 217px;
+    padding: 14px 0 10px 23px;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 28px;
+  }
+  .feedback__form-email {
+    min-width: 217px;
+    padding: 14px 0 10px 23px;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 28px;
+  }
+  .feedback__form-phone {
+    min-width: 217px;
+    padding: 14px 0 10px 23px;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 28px;
+  }
+  .feedback__action {
+    position: absolute;
+    top: 500px;
+    right: 140px;
+  }
+}
+
 .btn {
-  width: 187px;
-  height: 57px;
+  display: block;
+  padding: 0;
+  min-width: 187px;
+  min-height: 57px;
   background-color: #008ed6;
   border: none;
+  border-radius: 2px;
   cursor: pointer;
   outline: none;
   color: #ffffff;
@@ -645,6 +800,20 @@ template {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    min-width: 151px;
+    min-height: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    min-width: 187px;
+    min-height: 54px;
+  }
 }
 
 body {

@@ -1,0 +1,139 @@
+@import "../vars";
+@import "../fonts";
+
+.explore {
+  &__information {
+    margin-top: 23px;
+  }
+  &__page {
+    margin: 31px auto 47px auto
+  }
+}
+.information {
+  &__title {
+    position: relative;
+    display: block;
+    margin-left: 11px;
+    font-family: "Raleway-Medium";
+    font-weight: 500;
+    font-size: 34.9944px;
+    line-height: 50px;
+    color: #323232;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 1px;
+      background-color: $mainblue;
+      left: 3px;
+      top: 52px;
+    }
+  }
+  &__text {
+    margin: 12px 0 23px 11px;
+    font-family: "SourceSansPro-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #727272;
+  }
+}
+
+.information {
+  &__facts {
+    margin-bottom: 23px;
+  }
+}
+.facts {
+  display: flex;
+  &__icon {
+    min-width: 34px;
+    height: 36px;
+    margin-right: 19px;
+    background-color: $mainblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    &-img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &__info {
+    &-title {
+      font-family: "Raleway-Bold";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 25px;
+      color: #323232;
+    }
+    &-text {
+      margin: 7px 0 0 0;
+      font-family: "SourceSansPro-Regular";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #727272;
+    }
+  }
+}
+
+.page {
+  width: 298px;
+  height: 230px;
+  background-color: $pagegray;
+  border-radius: 2px;
+  &-container {
+    padding: 0 9px;
+  }
+  &__points {
+    padding-top: 8px;
+    display: flex;
+    &-item {
+      margin-right: 2px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50px;
+      background-color: #fff;
+    }
+  }
+  &__string {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    &-arrowback {
+      width: 7px;
+      height: 12px;
+      fill: $pageelem;
+      margin-right: 7px;
+    }
+    &-arrowfuture {
+      width: 7px;
+      height: 12px;
+      fill: $pageelem;
+      margin-right: 14px;
+    }
+    &-refresh {
+      width: 13px;
+      height: 12px;
+      fill: $pageelem;
+      margin-right: 13px;
+    }
+    &-adress {
+      width: 218px;
+      height: 16px;
+      background-color: #ffffff;
+    }
+  }
+  &__site{
+      margin-top: 9px;
+      width: 279px;
+      height: 172px;
+      &-img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+  }
+}

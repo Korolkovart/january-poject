@@ -1,6 +1,10 @@
 @import '_settings';
 @import '_normalize';
+@import '_fonts';
 @import './blocks/_header';
+@import './blocks/explore';
+
+
 
 body{
     min-width: 320px;

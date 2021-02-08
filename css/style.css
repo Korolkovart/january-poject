@@ -461,11 +461,12 @@ template {
 }
 
 .container {
-  padding: 0 11px 22px 11px;
+  padding: 0 11px 0 11px;
 }
 
 .main-section {
-  background: rgba(0, 0, 0, 0.8);
+  padding-bottom: 22px;
+  background: rgba(0, 2, 10, 0.8);
 }
 
 .main-section__header {
@@ -490,7 +491,10 @@ template {
 
 @media (min-width: 640px) {
   .container {
-    padding: 0 62px 38px 62px;
+    padding: 0 62px 0 62px;
+  }
+  .main-section {
+    padding-bottom: 38px;
   }
   .main-section__header {
     padding-top: 39px;
@@ -502,9 +506,12 @@ template {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 0 55px 0;
+    padding: 0;
     max-width: 646px;
     margin: auto;
+  }
+  .main-section {
+    padding-bottom: 55px;
   }
   .main-section__header {
     padding-top: 40px;
@@ -516,9 +523,12 @@ template {
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 0 156px 0;
+    padding: 0;
     max-width: 898px;
     position: relative;
+  }
+  .main-section {
+    padding-bottom: 156px;
   }
   .main-section__header {
     padding-top: 50px;
@@ -530,8 +540,11 @@ template {
 
 @media (min-width: 1280px) {
   .container {
-    padding: 0 0 208px 0;
+    padding: 0;
     max-width: 1143px;
+  }
+  .main-section {
+    padding-bottom: 208px;
   }
   .main-section__info {
     margin-top: 166px;
@@ -966,12 +979,75 @@ template {
   src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
 }
 
-.explore__information {
-  margin-top: 23px;
+.explore {
+  padding: 23px 0 47px 0;
 }
 
 .explore__page {
-  margin: 31px auto 47px auto;
+  margin: 31px auto 0 auto;
+}
+
+@media (min-width: 640px) {
+  .explore {
+    padding: 47px 0 65px 0;
+  }
+  .explore__information {
+    width: 442px;
+    margin: 0 auto;
+  }
+  .explore__page {
+    margin: 66px auto 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .explore {
+    padding: 49px 0 63px 0;
+  }
+  .explore__information {
+    margin: 0 auto;
+  }
+  .explore__page {
+    margin: 66px auto 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .explore {
+    padding: 49px 0 100px 0;
+  }
+  .explore-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .explore__information {
+    margin: 0;
+  }
+  .explore__page {
+    margin: 49px 27px 0 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .explore {
+    padding: 101px 0 100px 0;
+  }
+  .explore-grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .explore__information {
+    margin: 7px 0 0 0;
+  }
+  .explore__page {
+    margin: 0 64px 0 0;
+  }
 }
 
 .information__title {
@@ -996,7 +1072,7 @@ template {
 }
 
 .information__text {
-  margin: 12px 0 23px 11px;
+  margin: 22px 0 23px 11px;
   font-family: "SourceSansPro-Regular";
   font-weight: 400;
   font-size: 16px;
@@ -1006,6 +1082,37 @@ template {
 
 .information__facts {
   margin-bottom: 23px;
+}
+
+@media (min-width: 640px) {
+  .information__title {
+    margin-left: 0;
+  }
+  .information__title::after {
+    left: 1px;
+    top: 62px;
+  }
+  .information__text {
+    margin: 44px 0 36px 0;
+  }
+  .information__facts {
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .information__title {
+    font-size: 35px;
+  }
+  .information__text {
+    margin: 63px 0 47px 0;
+  }
+  .information__facts {
+    margin-bottom: 0;
+  }
+  .information__facts:first-child {
+    margin-bottom: 48px;
+  }
 }
 
 .facts {
@@ -1127,6 +1234,55 @@ template {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 640px) {
+  .page {
+    width: 447px;
+    height: 347px;
+  }
+  .page__string-adress {
+    width: 358px;
+  }
+  .page__site {
+    margin-top: 9px;
+    width: 419px;
+    height: 288px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    width: 443px;
+    height: 347px;
+  }
+  .page__site {
+    height: 286px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page {
+    width: 532px;
+    height: 424px;
+  }
+  .page__points {
+    padding-top: 7px;
+  }
+  .page__points-item {
+    margin-right: 2px;
+    width: 7px;
+    height: 7px;
+  }
+  .page__string-adress {
+    width: 452px;
+    height: 14px;
+  }
+  .page__site {
+    margin-top: 10px;
+    width: 514px;
+    height: 372px;
+  }
 }
 
 body {

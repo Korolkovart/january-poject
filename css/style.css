@@ -458,6 +458,7 @@ template {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-color: #000;
 }
 
 .container {
@@ -1124,7 +1125,7 @@ template {
 .facts__icon {
   min-width: 34px;
   height: 36px;
-  margin-right: 19px;
+  margin: 6px 19px 0 0;
   background-color: #0199E6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1136,11 +1137,6 @@ template {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 2px;
-}
-
-.facts__icon-img {
-  width: 12px;
-  height: 12px;
 }
 
 .facts__info-title {
@@ -1227,6 +1223,7 @@ template {
   margin-top: 9px;
   width: 279px;
   height: 172px;
+  background: #fff;
 }
 
 .page__site-img {
@@ -1283,6 +1280,141 @@ template {
     width: 514px;
     height: 372px;
   }
+}
+
+@font-face {
+  font-family: "MyriadPro-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
+}
+
+.describe {
+  padding: 23px 0 47px 0;
+  background-color: #f7f8fa;
+}
+
+.describe__title {
+  margin: 0;
+  font-family: "Raleway-Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 34.99px;
+  line-height: 50px;
+  color: #323232;
+  position: relative;
+}
+
+.describe__title::after {
+  content: "";
+  top: 53px;
+  left: 1px;
+  position: absolute;
+  width: 68px;
+  height: 2px;
+  background-color: #0199e6;
+}
+
+.describe__add:first-child {
+  margin-bottom: 33px;
+}
+
+.describe__page {
+  margin: 33px auto 0 auto;
+}
+
+.data__text {
+  margin: 12px 0 22px 0;
+  font-family: "SourceSansPro-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15.9929px;
+  line-height: 25px;
+  color: #727272;
+}
+
+.add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 6px 16px 0 0;
+  min-width: 35px;
+  height: 36px;
+  background-color: #0199E6;
+  border-radius: 2px;
+}
+
+.add__info-title {
+  font-family: "Raleway-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15.9929px;
+  line-height: 25px;
+  color: #323232;
+}
+
+.add__info-text {
+  margin: 7px 0 0 0;
+  font-family: "SourceSansPro-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15.9929px;
+  line-height: 25px;
+  color: #727272;
 }
 
 body {

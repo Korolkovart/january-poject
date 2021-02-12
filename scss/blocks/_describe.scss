@@ -1,0 +1,78 @@
+@import "../vars";
+@import "../fonts";
+
+.describe {
+  padding: 23px 0 47px 0;
+  background-color: #f7f8fa;
+  &__title {
+    margin: 0;
+    font-family: "Raleway-Medium";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 34.99px;
+    line-height: 50px;
+    color: #323232;
+    position: relative;
+    &::after {
+      content: "";
+      top: 53px;
+      left: 1px;
+      position: absolute;
+      width: 68px;
+      height: 2px;
+      background-color: #0199e6;
+    }
+  }
+  &__add {
+    &:first-child {
+      margin-bottom: 33px;
+    }
+  }
+  &__page{
+      margin: 33px auto 0 auto ; 
+  }
+}
+.data {
+  &__text {
+    margin: 12px 0 22px 0;
+    font-family: "SourceSansPro-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15.9929px;
+    line-height: 25px;
+    color: #727272;
+  }
+}
+
+.add {
+  display: flex;
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 16px 0 0;
+    min-width: 35px;
+    height: 36px;
+    background-color: $mainblue;
+    border-radius: 2px;
+  }
+  &__info {
+    &-title {
+      font-family: "Raleway-Bold";
+      font-weight: 700;
+      font-style: normal;
+      font-size: 15.9929px;
+      line-height: 25px;
+      color: #323232;
+    }
+    &-text {
+      margin: 7px 0 0 0;
+      font-family: "SourceSansPro-Regular";
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15.9929px;
+      line-height: 25px;
+      color: #727272;
+    }
+  }
+}

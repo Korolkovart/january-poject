@@ -137,16 +137,12 @@
   &__icon {
     min-width: 34px;
     height: 36px;
-    margin-right: 19px;
+    margin: 6px 19px 0 0;
     background-color: $mainblue;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2px;
-    &-img {
-      width: 12px;
-      height: 12px;
-    }
   }
   &__info {
     &-title {
@@ -218,6 +214,7 @@
     margin-top: 9px;
     width: 279px;
     height: 172px;
+    background: #fff;
     &-img {
       object-fit: cover;
       width: 100%;
